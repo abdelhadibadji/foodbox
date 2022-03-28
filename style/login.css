@@ -1,0 +1,202 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF1F1;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 25px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 50px;
+}
+
+.login-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.login-container form .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #AC3232;
+  margin-bottom: 5px;
+}
+
+.login-container form .login-tip {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #B5B5B5;
+  margin-bottom: 40px;
+}
+
+.login-container form i {
+  display: inline;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -34px;
+  font-size: 1.125rem;
+  max-width: 18px;
+  z-index: 1;
+  color: #F54748;
+}
+
+.login-container form input {
+  height: 50px;
+  border: 2px solid #E1E1E1;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 14px;
+  padding-left: 46px;
+  outline-color: #621C1D;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #505050;
+}
+
+.login-container form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.login-container form .checkbox .check {
+  accent-color: #F54748;
+  margin: 0;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  margin-right: 10px;
+}
+
+.login-container form .checkbox label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #621C1D;
+}
+
+.login-container form .checkbox label a {
+  text-decoration: none;
+  color: #AC3232;
+  margin-inline: 4px;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.login-container form .checkbox label a:hover {
+  color: #F54748;
+}
+
+.login-container form .pass-reset {
+  font-size: 0.875rem;
+  color: #505050;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.login-container form .pass-reset a {
+  text-decoration: none;
+  color: #AC3232;
+  margin-left: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.login-container form .pass-reset a:hover {
+  color: #F54748;
+}
+
+.login-container button {
+  background-color: #F54748;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  height: 50px;
+  border-radius: 8px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.login-container button:hover {
+  background-color: #d03c3d;
+}
+
+.login-container button:focus {
+  background-color: #AC3232;
+}
+
+.signlog {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 25px;
+  font-size: 0.875rem;
+  color: #505050;
+}
+
+.signlog a {
+  text-decoration: none;
+  color: #AC3232;
+  margin-left: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.signlog a:hover {
+  color: #F54748;
+}
+
+@media screen and (max-width: 650px) {
+  .login-container {
+    background-color: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .login-container {
+    padding-inline: 15px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

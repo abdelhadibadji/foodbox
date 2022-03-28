@@ -1,0 +1,166 @@
+@import 'variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-bg;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 25px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: $light-shade;
+    box-shadow: $Shadow_XS;
+    border-radius: 12px;
+    padding: 50px;
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .title {
+            font-size: 1.25rem;
+            font-weight: $Bold;
+            color: $primary-700;
+            margin-bottom: 5px;
+        }
+        .login-tip {
+            font-size: 1rem;
+            font-weight: $Regular;
+            color: $gray-500;
+            margin-bottom: 40px;
+
+        }
+        i {
+            display: inline;
+            text-align: left;
+            margin-left: 15px;
+            margin-bottom: -34px;
+            font-size: 1.125rem;
+            max-width: 18px;
+            z-index: 1;
+            color: $primary-500;
+        }
+        input {
+            height: 50px;
+            border: 2px solid $gray-300;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 14px;
+            padding-left: 46px;
+            outline-color: $primary-900;
+            font-size: 0.875rem;
+            font-weight: $Medium;
+            color: $gray-700;
+        }
+        .checkbox {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+            text-align: left;
+            .check {
+                accent-color: $primary-500;
+                margin: 0;
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                min-height: 20px;
+                margin-right: 10px;
+            }
+            label {
+                font-size: 0.875rem;
+                font-weight: $Regular;
+                color: $primary-900;
+        
+                a {
+                    text-decoration: none;
+                    color: $primary-700;
+                    margin-inline: 4px;
+                    transition: 0.15s;
+                }
+                a:hover {
+                    color: $primary-500;
+        
+                }
+            }
+        }
+        .pass-reset{
+            font-size: 0.875rem;
+            color: $gray-700;
+            margin-bottom: 25px;
+            text-align: left;
+            a {
+                text-decoration: none;
+                color: $primary-700;
+                margin-left: 5px;
+                transition: 0.1s;
+            }
+                a:hover {
+                    color: $primary-500;
+                }
+            }
+        }
+        button {
+            background-color: $primary-500;
+            color: $light-shade;
+            font-size: 1rem;
+            font-weight: $Medium;
+            border: none;
+            height: 50px;
+            border-radius: 8px;
+            transition: 0.1s;
+        }
+        button:hover {
+            background-color: $primary-600;
+        }
+        button:focus {
+            background-color: $primary-700;
+        }
+    }
+
+
+.signlog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 25px;
+    font-size: 0.875rem;
+    color: $gray-700;
+    a {
+        text-decoration: none;
+        color: $primary-700;
+        margin-left: 5px;
+        transition: 0.1s;
+    }
+    a:hover {
+        color: $primary-500;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .login-container {
+        background-color: unset;
+        box-shadow: unset;
+    }
+
+} 
+
+@media screen and (max-width: 470px) {
+    .login-container {
+        padding-inline: 15px;
+    }
+
+}
